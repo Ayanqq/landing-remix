@@ -1,0 +1,22 @@
+---
+import Image from "astro/components/Image.astro";
+import img from "../assets/1782572e23ce289e045414c0d19591c785066c42.png";
+---
+
+<div class="bg-white p-[60px] rounded-[40px] relative">
+  <h2 class="font-extrabold text-[30px] mb-[24px]">Связаться с нами</h2>
+  <div>
+    <form class="flex flex-col gap-[16px] max-w-[600px]">
+      <input type="text" placeholder="Имя*" class="bg-[#EDECED] px-[16px] py-[14px] rounded-[8px]" />
+      <input type="text" placeholder="Email или номер телефона"
+             class="bg-[#EDECED] px-[16px] py-[14px] rounded-[8px]" />
+      <textarea placeholder="Кратко опишите запрос" class="bg-[#EDECED] px-[16px] py-[14px] rounded-[8px]"></textarea>
+      <div>
+        <button type="submit" class="px-[28px] py-[16px] rounded-[50px] font-extrabold text-white"
+                style="background: linear-gradient(180deg, #009DFF 0%, #AE00FF 100%)">Отправить заявку
+        </button>
+      </div>
+    </form>
+    <Image src={img} alt="form-img" width={440} class="absolute top-0 right-0" />
+  </div>
+</div>

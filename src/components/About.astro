@@ -1,0 +1,16 @@
+---
+import Image from "astro/components/Image.astro";
+import photo from "./../assets/dd39df0bfe9d402047cbae12c8863488ee69c56f.png";
+---
+
+<div class="py-[80px] px-[60px] bg-white rounded-[40px] flex relative">
+  <div class="flex flex-col gap-[20px]">
+    <h2 class="font-extrabold text-[30px]">О нас</h2>
+    <p class="w-[605px]">
+      Мы — команда экспертов с многолетним опытом в сопровождении решений на
+      платформе 1С. Настроим, оптимизируем и поддержим вашу систему под
+      конкретные задачи.
+    </p>
+  </div>
+  <Image src={photo} alt="computer" width={650} class="absolute right-[-30px] top-[-110px]" />
+</div>
