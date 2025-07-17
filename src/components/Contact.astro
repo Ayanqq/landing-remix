@@ -43,6 +43,7 @@ window.onload = function() {
                 emailjs.sendForm("service_s1khzjk", "template_sursenb", "#contact-form")
     .then(() => {
     alert("Форма успешно отправлена!");
+    location.reload();
     }, (error) => {
     console.log("FAILED...", error);
     });
